@@ -1,17 +1,23 @@
-# Welcome to MkDocs
+# 🚩 Nikhil's Cybersecurity Notebook
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+!!! abstract "Mission Status"
+    Welcome to my personal knowledge base. This repository serves as a central brain for my offensive security operations, red team methodology, and CTF writeups.
 
-## Commands
+    **Current Focus:** Red Teaming & Active Directory Exploitation.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+---
 
-## Project layout
+## 📂 Knowledge Modules
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| Module | Description | Status |
+| :--- | :--- | :--- |
+| **[💀 Pentesting](pentesting/index.md)** | Network & Web exploitation methodology. | `Active` |
+| **[⚔️ Red Teaming](red-team/index.md)** | Advanced adversary simulation, C2, and evasion. | `Building` |
+| **[🚩 CTF Writeups](ctf/index.md)** | Walkthroughs for HTB, THM, and live events. | `Active` |
+| **[⚡ Cheatsheets](cheatsheets/index.md)** | Quick reference commands for the field. | `Updated` |
+| **[🔐 Cryptography](crypto/index.md)** | Encryption standards, cracking, and math. | `Study` |
+| **[🌐 Networking](networking/index.md)** | Deep dive into protocols (TCP/IP, DNS, BGP). | `Study` |
+| **[💻 OS Internals](os-internals/index.md)** | Linux Kernel & Windows Architecture. | `Study` |
+
+!!! tip "Navigation"
+    Use the sidebar to navigate specific topics or `Ctrl + F` to search the entire database.
