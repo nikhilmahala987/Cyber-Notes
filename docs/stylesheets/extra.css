@@ -1,23 +1,89 @@
-/* Set the background image for the whole page */
-body {
-    background-image: url('../assets/hacker-bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+/* Import Google Font 'Inter' to match GitBook's clean look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* GitBook Dark Colors */
+    --md-default-bg: #0f111a;
+    /* Main Content Background (Very Dark Blue-Grey) */
+    --md-default-fg: #b8b8b8;
+    /* Main Text Color (Soft Grey) */
+    --md-primary-fg: #3b82f6;
+    /* GitBook Blue (links/buttons) */
+
+    /* Sidebar Colors */
+    --md-admonition-bg: #161b22;
+    --md-code-bg: #161b22;
+    /* Code block background */
+
+    /* Font Override */
+    --md-text-font: 'Inter', sans-serif;
+    --md-code-font: 'JetBrains Mono', monospace;
+
+    --md-grid-max-width: 95vw;
 }
 
-/* Make the content boxes semi-transparent so you can see the bg */
-.md-main__inner {
-    background: rgba(0, 0, 0, 0.8);
-    /* Black with 80% opacity */
-    backdrop-filter: blur(5px);
-    /* Blur effect behind text */
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-/* Make the sidebar transparent */
+/* 1. Make the Sidebar match GitBook's flat look */
 .md-sidebar {
-    background: rgba(0, 0, 0, 0.4);
+    background-color: #0f111a;
+    /* Same as main bg for seamless look */
+}
+
+.md-nav__item .md-nav__link--active {
+    font-weight: 700;
+    color: #3b82f6 !important;
+    /* Blue active link */
+    border-left: 3px solid #3b82f6;
+    /* The little blue bar on the left */
+    padding-left: 10px;
+}
+
+/* 2. Headers (H1, H2) - Make them White and Bold */
+h1,
+h2,
+h3,
+h4 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    /* Tighter tracking like GitBook */
+}
+
+/* 3. Code Blocks - Darker and Rounder */
+.md-typeset pre>code {
+    background-color: #1a1f2e;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+/* 4. "Admonitions" (The Note/Tip boxes) - Make them look like GitBook Callouts */
+.md-typeset .admonition {
+    background-color: #1a1f2e !important;
+    border: 1px solid #30363d !important;
+    border-radius: 8px;
+    border-left: none !important;
+    /* GitBook doesn't use the thick left border */
+}
+
+.md-typeset .admonition-title {
+    background-color: rgba(59, 130, 246, 0.1) !important;
+    /* Subtle blue header */
+    color: #3b82f6 !important;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+/* 5. Clean up the Header/App Bar */
+.md-header {
+    background-color: #0f111a !important;
+    /* Blend header with body */
+    border-bottom: 1px solid #30363d;
+}
+
+/* Hide the shadow for a flat look */
+.md-header[data-md-state="shadow"] {
+    box-shadow: none;
+}
+
+.md-sidebar--secondary {
+    margin-left: 0;
 }

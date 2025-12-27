@@ -6,18 +6,14 @@ edit_uri: edit/main/docs/
 # 1. Aesthetics
 theme:
   name: material
-  logo: assets/logo.png  # (Optional: Put a logo.png in assets)
-  favicon: assets/favicon.ico
   palette:
-    scheme: slate        # Dark Mode
-    primary: deep purple # Main color (header)
-    accent: teal         # Link/Button color
+    scheme: slate   # This creates the Dark Mode
+    primary: blue   # Matches the blue accents in the image
+    accent: blue
   features:
-    - navigation.tabs        # Top-level tabs for main sections
-    - navigation.sections    # Group sub-pages in sidebar
-    - navigation.expand      # Open folders by default
-    - navigation.top         # "Back to Top" button
-    - content.code.copy      # Copy button on code blocks
+    - navigation.expand
+    - content.code.copy
+    - toc.follow
 
 # 2. Custom CSS (This loads your background)
 extra_css:
@@ -40,7 +36,7 @@ nav:
   - Home: index.md
   - 💀 Pentesting:
     - Overview: Pentesting/index.md
-    - Linux PrivEsc: Pentesting/linux-privesc.md
+    - Linux PrivEsc: Pentesting/Linux_priv.md
     - Web Exploitation: Pentesting/web-exploitation.md
   - ⚔️ Red Teaming:
     - Overview: Red-Team/index.md
