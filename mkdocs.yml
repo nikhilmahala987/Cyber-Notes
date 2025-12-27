@@ -39,19 +39,19 @@ markdown_extensions:
 nav:
   - Home: index.md
   - 💀 Pentesting:
-    - Overview: pentesting/index.md
-    - Linux PrivEsc: pentesting/linux-privesc.md
-    - Web Exploitation: pentesting/web-exploitation.md
+    - Overview: Pentesting/index.md
+    - Linux PrivEsc: Pentesting/linux-privesc.md
+    - Web Exploitation: Pentesting/web-exploitation.md
   - ⚔️ Red Teaming:
-    - Overview: red-team/index.md
-    - Active Directory: red-team/active-directory.md
+    - Overview: Red-Team/index.md
+    - Active Directory: Red-Team/active-directory.md
   - 🚩 CTF Writeups:
-    - Overview: ctf/index.md
-    - HackTheBox: ctf/hackthebox.md
-    - TryHackMe: ctf/tryhackme.md
+    - Overview: CTF/index.md
+    - HackTheBox: CTF/hackthebox.md
+    - TryHackMe: CTF/tryhackme.md
   - ⚡ Cheatsheets:
-    - Overview: cheatsheets/index.md
-    - Reverse Shells: cheatsheets/reverse-shells.md
+    - Overview: Cheatsheets/index.md
+    - Reverse Shells: Cheatsheets/reverse-shells.md
   - 🔐 Cryptography: crypto/index.md
   - 🌐 Networking: networking/index.md
   - 💻 OS Internals: os-internals/index.md

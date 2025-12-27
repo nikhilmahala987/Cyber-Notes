@@ -1,0 +1,23 @@
+/* Set the background image for the whole page */
+body {
+    background-image: url('../assets/hacker-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Make the content boxes semi-transparent so you can see the bg */
+.md-main__inner {
+    background: rgba(0, 0, 0, 0.8);
+    /* Black with 80% opacity */
+    backdrop-filter: blur(5px);
+    /* Blur effect behind text */
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Make the sidebar transparent */
+.md-sidebar {
+    background: rgba(0, 0, 0, 0.4);
+}
