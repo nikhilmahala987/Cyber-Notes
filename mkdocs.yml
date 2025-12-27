@@ -1,0 +1,33 @@
+site_name: Cyber Notes
+site_url: https://nikhilmahala987.github.io/Cyber-Notes/
+repo_url: https://github.com/nikhilmahala987/Cyber-Notes
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # Dark mode color scheme
+    - scheme: slate
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    # Light mode color scheme (optional switch)
+    - scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - content.code.copy
+    - navigation.expand
+    - search.highlight
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
